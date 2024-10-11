@@ -60,22 +60,29 @@ const MusicPlayer = () => {
 
     const handlePlayList = () => {
         setListVisible(!ListVisible);
-    }
+    };
 
     const handleSongClick = (index) => {
         setCurrentSong(index); // Update the current song in context
         setIsPlaying(true); // Play the selected song
-    }
+    };
 
     return (
         <>
             <div style={styles.container}>
                 <div style={styles.header}>
-                    {!ListVisible ? (
-                        <GiHamburgerMenu style={styles.backIcon} onClick={handlePlayList} />
-                    ) : (
-                        <FaXmark style={styles.backIcon} onClick={handlePlayList} />
-                    )}
+                    <div style={styles.leftIcon}>
+                        {!ListVisible ? (
+                            <GiHamburgerMenu style={styles.backIcon} onClick={handlePlayList} />
+                        ) : (
+                            <FaXmark style={styles.backIcon} onClick={handlePlayList} />
+                        )}
+                    </div>
+                    {/* <div style={styles.centerText}>rahul</div> */}
+                    <div style={styles.rightIcon}>
+                        <div>Made By Rahul !</div>
+                        {/* Add any right-side icon or other content here */}
+                    </div>
                 </div>
 
                 {ListVisible ? (
@@ -91,7 +98,6 @@ const MusicPlayer = () => {
                             <div style={{ ...styles.progress, width: `${calculateProgress()}%` }}></div>
                         </div>
                         <div style={styles.time}>{formatTime(currentTime)}</div>
-                        
                         <div style={styles.controls}>
                             <IoPlaySkipBackSharp style={styles.controlIcon} onClick={prevSong} />
                             {isPlaying ? (
@@ -122,13 +128,39 @@ const styles = {
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     },
     header: {
-        alignSelf: 'flex-start',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '100%',
+        padding: '10px 0',
+        marginBottom:'1rem'
+    },
+    leftIcon: {
+        flexBasis: '10%',
+        display: 'flex',
+        justifyContent: 'flex-start',
+    },
+    centerText: {
+        flexGrow: 1,
+        textAlign: 'center',
+        color: '#FFF',
+    },
+    rightIcon: {
+       
+        display: 'flex',
+        justifyContent: 'flex-end',
+        fontWeight:'700',
+        color: '#FFD700',
+        width:'10rem',
+        opacity:'.5'
     },
     backIcon: {
         color: '#FFD700',
         fontSize: '20px',
-        marginBottom: '20px',
         cursor: 'pointer',
+    },
+    albumArtContainer: {
+        marginBottom: '10rem',
     },
     albumArt: {
         borderRadius: '50%',
@@ -169,9 +201,6 @@ const styles = {
         fontSize: '24px',
         cursor: 'pointer',
     },
-    albumArtContainer: {
-        marginBottom: '10rem'
-    }
 };
 
 export default MusicPlayer;
