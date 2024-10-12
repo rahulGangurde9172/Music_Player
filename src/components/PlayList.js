@@ -2,8 +2,7 @@ import React, { useContext } from 'react';
 import { Songplayer } from '../content/MusicContent';
 
 const PlayList = () => {
-    const { songs, currentSongIndex, setCurrentSong } = useContext(Songplayer); // Destructure to get the full list of songs and current song index
-
+    const { songs, currentSongIndex, setCurrentSong } = useContext(Songplayer); 
     return (
         <div style={styles.container}>
             <h2 style={styles.heading}>Your Playlist</h2>
@@ -11,7 +10,7 @@ const PlayList = () => {
                 <div
                     style={{
                         ...styles.playlistContent,
-                        backgroundColor: currentSongIndex === index ? '#444' : 'transparent', // Change background for selected song
+                        backgroundColor: currentSongIndex === index ? '#444' : 'transparent',
                     }}
                     key={index}
                     onClick={() => setCurrentSong(index)}

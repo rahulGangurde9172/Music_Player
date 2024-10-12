@@ -63,8 +63,8 @@ const MusicPlayer = () => {
     };
 
     const handleSongClick = (index) => {
-        setCurrentSong(index); // Update the current song in context
-        setIsPlaying(true); // Play the selected song
+        setCurrentSong(index); 
+        setIsPlaying(true); 
     };
 
     return (
@@ -78,10 +78,10 @@ const MusicPlayer = () => {
                             <FaXmark style={styles.backIcon} onClick={handlePlayList} />
                         )}
                     </div>
-                    {/* <div style={styles.centerText}>rahul</div> */}
+           
                     <div style={styles.rightIcon}>
                         <div>Made By Rahul !</div>
-                        {/* Add any right-side icon or other content here */}
+                        
                     </div>
                 </div>
 
@@ -120,8 +120,8 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         backgroundColor: '#333',
-        // borderRadius: '20px',
-        width: '100%',
+        borderRadius: '20px',
+        width: '97%',
         height: '100vh',
         padding: '20px',
         color: '#FFF',
