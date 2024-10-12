@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Music_Player/static/css/main.f855e6bc.css",
+    "main.js": "/Music_Player/static/js/main.50eec24e.js",
+    "static/media/Kevadyacha-Paan-Tu.mp3": "/Music_Player/static/media/Kevadyacha-Paan-Tu.fdbeb12ccc8e504f507c.mp3",
+    "static/media/Man-Bavarlay.mp3": "/Music_Player/static/media/Man-Bavarlay.5a86719f02e6e6693f7d.mp3",
+    "static/media/Alan Walker - Faded.mp3": "/Music_Player/static/media/Alan Walker - Faded.3a4f1b3bfd899c468873.mp3",
+    "static/media/Alan x Walkers - By Your Side.mp3": "/Music_Player/static/media/Alan x Walkers - By Your Side.6302375806a79b8e258e.mp3",
+    "static/media/Ve_Kamleya.mp3": "/Music_Player/static/media/Ve_Kamleya.a5b8654adaabc2c87b51.mp3",
+    "static/media/Dil ab Kahan hai jo dobara de de kisi ko hum.mp3": "/Music_Player/static/media/Dil ab Kahan hai jo dobara de de kisi ko hum.e9dc3d1a172cd812e732.mp3",
+    "static/media/O Maahi.mp3": "/Music_Player/static/media/O Maahi.5835ab0988485cf0bea8.mp3",
+    "static/media/jubin.jpg": "/Music_Player/static/media/jubin.cbcddc2802c009be3d87.jpg",
+    "static/media/marathi-2.jpeg": "/Music_Player/static/media/marathi-2.977605a255407f4bd030.jpeg",
+    "static/media/arigit-2.jpeg": "/Music_Player/static/media/arigit-2.0648fc8341d0ee78f5cd.jpeg",
+    "static/media/alan-2.webp": "/Music_Player/static/media/alan-2.bc4bc4e10075dfddc726.webp",
+    "static/media/alan-1.jpeg": "/Music_Player/static/media/alan-1.c55d053cdce1b428246a.jpeg",
+    "static/media/marathi-3.jpeg": "/Music_Player/static/media/marathi-3.176218b463515789843c.jpeg",
+    "static/media/arigit-3.jpeg": "/Music_Player/static/media/arigit-3.b6268e894e5ccc1b83c9.jpeg",
+    "index.html": "/Music_Player/index.html",
+    "main.f855e6bc.css.map": "/Music_Player/static/css/main.f855e6bc.css.map",
+    "main.50eec24e.js.map": "/Music_Player/static/js/main.50eec24e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.50eec24e.js"
+  ]
+}
