@@ -7,7 +7,7 @@ import { FaXmark } from "react-icons/fa6";
 import PlayList from './PlayList';
 
 const MusicPlayer = () => {
-    const { song, nextSong, prevSong, songs, setCurrentSong } = useContext(Songplayer);
+    const { song, nextSong, prevSong,  setCurrentSong } = useContext(Songplayer);
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
@@ -120,8 +120,8 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         backgroundColor: '#333',
-        borderRadius: '20px',
-        width: '354px',
+        // borderRadius: '20px',
+        width: '100%',
         height: '100vh',
         padding: '20px',
         color: '#FFF',
